@@ -48,7 +48,7 @@ export default function Profile() {
           <p key={i}>{value}</p>;
         })}
 
-        {/* there are 2 solutions to undefined errors: */}
+        {/* there are 2 solutions to solve undefined errors: */}
         {/* {aboutMe &&
           aboutMe.map((paragraph, index) => <p key={index}>{paragraph}</p>)} */}
       </div>

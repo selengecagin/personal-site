@@ -26,7 +26,7 @@ const data = {
     "Cras quis tortor in velit porta ultricies sed ut arcu. Proin volutpat nisl sapien, eget elementum nibh imperdiet et. Maecenas mi mi, maximus quis velit et, eleifend hendrerit nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vel elementum eros. Donec risus mauris, scelerisque et purus maximus, ultrices sodales nibh. Vestibulum aliquet, tortor eu sagittis varius, metus nulla finibus nulla, quis pulvinar diam dui vel nisl. ",
   ],
 
-  contact: {
+  footer: {
     title: "Send me a message!",
     text: "Got a question or proposal, or just want to say hello? Go ahead.",
     email: "selengecagin@gmail.com",
