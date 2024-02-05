@@ -4,7 +4,7 @@ const data = {
   description:
     "I am a Frontend Developer who likes to craft solid and scalable frontend products with great user experiences",
   buttons: ["Github", "Linkedin"],
-  imageURL: "https://picsum.photos/200",
+  imgURL: "https://picsum.photos/200",
 
   skills: ["JAVASCRIPT", "REACT", "REDUX", "NODE", "REACT", "VS CODE", "FIGMA"],
 
