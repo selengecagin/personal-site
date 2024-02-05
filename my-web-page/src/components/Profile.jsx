@@ -4,7 +4,7 @@ export default function Profile() {
   const { data } = useContext(DataContext);
   const { profile, imgURL, aboutMe } = data;
   console.log(data);
-  //burayı nsıl mapleyebilirim?
+  //burayı nasıl mapleyebilirim?
   // {key:"birthDate",title:"Doğum Tarihi"}
   // ****** this way, title names couldn't be specified title: "Doğum Tarihi "
   // const infoTitles = profile ? Object.keys(profile).map((key) => ({

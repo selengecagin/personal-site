@@ -20,7 +20,7 @@ export const DataProvider = ({ children }) => {
       });
   }, []);
 
-  console.log("dataaaaalaaar", data);
+  console.log("datalar", data);
 
   return (
     <DataContext.Provider value={{ data, loading, error }}>
