@@ -10,7 +10,7 @@ const data = {
 
   profile: {
     birthDate: "11.01.1998",
-    city: "İstanbul",
+    location: "İstanbul",
     education:
       "Boğaziçi Üniversitesi, Computer Education and Educational Technologies,2024",
     preferredPosition: "Frontend, UI",
