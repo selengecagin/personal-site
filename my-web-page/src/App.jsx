@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Profile from "./components/Profile";
-import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import { DataProvider } from "./context/DataContext";
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Skills />
       <Projects />
       <Profile />
-      <Contact />
+      <Footer />
     </DataProvider>
   );
 }
