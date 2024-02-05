@@ -12,8 +12,9 @@ export default function Hero() {
       <h1>{header}</h1>
       <p>{description}</p>
       <img src={imgURL}></img>
-      <p>{buttons[0]}</p>
-      <p>{buttons[1]}</p>
+      {/* buttonları maple */}
+      <p>{buttons}</p>
+      <p>{buttons}</p>
     </div>
   );
 }
