@@ -12,9 +12,9 @@ export default function Hero() {
       <h1>{header}</h1>
       <p>{description}</p>
       <img src={imgURL}></img>
-      {/* buttonları maple */}
-      <p>{buttons}</p>
-      <p>{buttons}</p>
+      {buttons?.map((button, i) => {
+        <p key={i}>{button}</p>;
+      })}
     </div>
   );
 }
