@@ -12,6 +12,7 @@ export default function Hero() {
       <h1>{header}</h1>
       <p>{description}</p>
       <img src={imgURL}></img>
+      {/* buttons? checks if buttons exists and maps only then over the array.  */}
       {buttons?.map((button, i) => {
         <p key={i}>{button}</p>;
       })}
