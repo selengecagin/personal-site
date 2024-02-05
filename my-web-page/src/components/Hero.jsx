@@ -4,7 +4,7 @@ import { DataContext } from "../context/DataContext";
 
 export default function Hero() {
   const { data, loading, error } = useContext(DataContext);
-  const { header, decription, imgURL, buttons } = data;
+  const { header, description, imgURL, buttons } = data;
 
   return (
     <div>
