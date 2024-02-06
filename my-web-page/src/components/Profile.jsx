@@ -19,22 +19,22 @@ export default function Profile() {
         <h3>Basic Information</h3>
         <div>
           <p>Birthdate</p>
-          <p>{data.profile?.birthDate}</p>
+          <p>{profile?.birthDate}</p>
         </div>
 
         <div>
           <p>Current Adress</p>
-          <p>{data.profile?.location}</p>
+          <p>{profile?.location}</p>
         </div>
 
         <div>
           <p>Education</p>
-          <p>{data.profile?.education}</p>
+          <p>{profile?.education}</p>
         </div>
 
         <div>
           <p>Preferred Role</p>
-          <p>{data.profile?.preferredPosition}</p>
+          <p>{profile?.preferredPosition}</p>
         </div>
       </div>
 

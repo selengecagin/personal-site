@@ -1,6 +1,10 @@
 import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
+// export const useData = () => {
+//   return useContext(DataContext);
+// };
+
 export const DataProvider = ({ children }) => {
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);

@@ -7,9 +7,9 @@ export default function Footer() {
 
   return (
     <div>
-      <h3>{footer.title}</h3>
-      <p>{footer.text}</p>
-      <p>{footer.email}</p>
+      <h3>{footer?.title}</h3>
+      <p>{footer?.text}</p>
+      <p>{footer?.email}</p>
     </div>
   );
 }
