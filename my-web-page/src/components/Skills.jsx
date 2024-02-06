@@ -9,10 +9,17 @@ export default function Skills() {
     <div>
       <h2>Skills</h2>
       <ul>
-        {/* skills? checks if skills exists and maps only then over the array.  */}
-        {skills?.map((skill, index) => {
-          <li key={index}>{skill}</li>;
-        })}
+        {skills &&
+          Object.keys(skills).map((skillName) => (
+            <li key={skillName}>
+              <img
+                src={skills[skillName]}
+                alt={skillName}
+                style={{ width: "50px", height: "50px", marginRight: "10px" }}
+              />
+              {skillName}
+            </li>
+          ))}
       </ul>
     </div>
   );
