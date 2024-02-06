@@ -33,10 +33,17 @@ export default function Hero() {
       <h1>{header}</h1>
       <p>{description}</p>
 
-
       <div className="hero-btn">
         {buttons?.map((button, index) => {
-          <div></div>;
+          <div>
+            <button>
+              {index ½ 2 === 0 ? (
+                <FontAwesomeIcon icon={faGithub} size="1x" />
+              ) : (
+                <FontAwesomeIcon icon={faLinkedin} size="1x" />
+              )}
+            </button>
+          </div>;
         })}
       </div>
 
