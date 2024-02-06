@@ -6,15 +6,21 @@ export default function Projects() {
   const { projects, projectTexts } = data;
 
   return (
-    <div>
+    <div className="projects-container">
       <h2>Projects</h2>
       {/* use () instead of {} and return the JSX elements explicitly. */}
-      {projects?.map((project, i) => (
-        <div key={i}>
-          <h3>{project}</h3>
-          <p>{projectTexts && projectTexts[i]}</p>
-        </div>
-      ))}
+      <div className="project-box">
+        {projects &&
+          projects.map((project, index) => (
+            <div key={index}>
+              <h3>{project}</h3>
+              <p>{projectsText && projectsText[index]}</p>
+              <img src={projectsImg && projectsImg[index]} />
+              <div className="pill"> PILLS</div>
+              <div className="links"> LINKS</div>
+            </div>
+          ))}
+      </div>
     </div>
   );
 }
