@@ -1,7 +1,11 @@
+import "../App.css";
 import React, { useContext } from "react";
 import Header from "./Header";
 import { DataContext } from "../context/DataContext";
 import { LanguageContext } from "../context/LanguageContext";
+import { dataEng, dataTr } from "../data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const languageButton = () => {
   const { language, toggleLanguage } = useContext(LanguageContext);
