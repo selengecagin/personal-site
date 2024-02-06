@@ -4,6 +4,7 @@ import Header from "./Header";
 import { DataContext } from "../context/DataContext";
 import { LanguageContext } from "../context/LanguageContext";
 import { dataEng, dataTr } from "../data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 // run this command and import:
