@@ -19,7 +19,7 @@ export default function Profile() {
       <div className="profile-item">
         <h3>Basic Information</h3>
         <div className="profile-item">
-          <p>Birthdate</p>
+          <p>Birth date</p>
           <p>{profile?.birthDate}</p>
         </div>
 
@@ -48,10 +48,9 @@ export default function Profile() {
         {aboutMe?.map((value, i) => {
           <p key={i}>{value}</p>;
         })}
-
         {/* there are 2 solutions to solve undefined errors: */}
-        {/* {aboutMe &&
-          aboutMe.map((paragraph, index) => <p key={index}>{paragraph}</p>)} */}
+        {/* {aboutMe && aboutMe.map((paragraph, index) => <p key={index}>{paragraph}</p>)} */}
+        {/*{aboutMe?.map((value, i) => {<p key={i}>{value}</p>;})} */}
       </div>
     </div>
   );

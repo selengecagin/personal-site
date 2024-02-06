@@ -11,7 +11,7 @@ export default function Projects() {
       {/* use () instead of {} and return the JSX elements explicitly. */}
       {projects?.map((project, i) => (
         <div key={i}>
-          <h4>{project}</h4>
+          <h3>{project}</h3>
           <p>{projectTexts && projectTexts[i]}</p>
         </div>
       ))}
