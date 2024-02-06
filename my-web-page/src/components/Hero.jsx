@@ -36,11 +36,11 @@ export default function Hero() {
       <div className="hero-btn">
         {buttons?.map((button, index) => {
           <div>
-            <button>
-              {index ½ 2 === 0 ? (
-                <FontAwesomeIcon icon={faGithub} size="1x" />
+            <button key={index}>
+              {index % 2 === 0 ? (
+                <FontAwesomeIcon icon={faGithub} size="2x" />
               ) : (
-                <FontAwesomeIcon icon={faLinkedin} size="1x" />
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
               )}
             </button>
           </div>;
@@ -51,3 +51,9 @@ export default function Hero() {
     </div>
   );
 }
+
+// notes:
+//  add key={index} to avoid "Each child in a list should have a unique 'key' prop"
+//  while adding key={index} may suppress the warning, it's best to ensure that each item in the list has a
+//  stable and unique identifier to improve the performance and correctness of your React components.
+//  Do my solution provide this??
