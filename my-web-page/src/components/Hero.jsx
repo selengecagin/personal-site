@@ -6,6 +6,11 @@ export default function Hero() {
   const { data, loading, error } = useContext(DataContext);
   const { header, description, imgURL, buttons } = data;
 
+
+
+
+
+  
   return (
     <div>
       <Header />
