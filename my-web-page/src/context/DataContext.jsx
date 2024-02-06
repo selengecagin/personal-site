@@ -1,9 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
-
-export const useData = () => {
-  return useContext(DataContext);
-};
+import { dataEng } from "../data";
 
 export const DataProvider = ({ children }) => {
   const [data, setData] = useState({});
@@ -13,9 +10,9 @@ export const DataProvider = ({ children }) => {
   //create post request at component did mount
   useEffect(() => {
     axios
-      .post("/post", data)
+      .post("/post", dataEng)
       .then((res) => {
-        setData(data);
+        setData(dataEng);
         console.log("response: ", res);
       })
       .catch((err) => {
@@ -27,7 +24,7 @@ export const DataProvider = ({ children }) => {
   console.log("datalar", data);
 
   return (
-    <DataContext.Provider value={{ data, loading, error }}>
+    <DataContext.Provider value={{ data, setData, loading, error }}>
       {children}
     </DataContext.Provider>
   );
