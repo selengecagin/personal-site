@@ -5,7 +5,7 @@ export const useData = () => {
   return useContext(DataContext);
 };
 
-export default const DataProvider = ({ children }) => {
+export const DataProvider = ({ children }) => {
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
