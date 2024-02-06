@@ -10,6 +10,7 @@ function App() {
   return (
     <LanguageContextProvider>
       <DataProvider>
+        {/* header is imported to the hero component */}
         <Hero />
         <Skills />
         <Profile />
