@@ -4,8 +4,12 @@ import Header from "./Header";
 import { DataContext } from "../context/DataContext";
 import { LanguageContext } from "../context/LanguageContext";
 import { dataEng, dataTr } from "../data";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+
+// run this command and import:
+// npm i --save @fortawesome/free-brands-svg-icons
+// import { faGithub } from '@fortawesome/free-brands-svg-icons';
+// import { faCopy, faQuestionCircle, faQrcode } from '@fortawesome/free-solid-svg-icons';
 
 const languageButton = () => {
   const { language, toggleLanguage } = useContext(LanguageContext);
