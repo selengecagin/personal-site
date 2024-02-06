@@ -29,16 +29,18 @@ export default function Hero() {
   return (
     <div>
       <Header />
-      {/* languagebutton */}
-      <div className="languageButton"></div>
-
+      {/* ********* languagebutton *******/}
       <h1>{header}</h1>
       <p>{description}</p>
+
+
+      <div className="hero-btn">
+        {buttons?.map((button, index) => {
+          <div></div>;
+        })}
+      </div>
+
       <img src={heroImg}></img>
-      {/* buttons? checks if buttons exists and maps only then over the array.  */}
-      {buttons?.map((button, i) => {
-        <p key={i}>{button}</p>;
-      })}
     </div>
   );
 }
