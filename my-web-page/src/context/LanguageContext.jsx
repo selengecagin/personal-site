@@ -14,3 +14,17 @@ export default function LanguageContextProvider({ children }) {
 
   return <LanguageContext.Provider>{children}</LanguageContext.Provider>;
 }
+
+
+//Notes:
+// const MyComponent = () => {
+//   const language = useContext(LanguageContext);
+
+//   return <div>Current language: {language}</div>;
+// };
+
+// const MyComponent = () => {
+//   const language = useLanguage();
+
+//   return <div>Current language: {language}</div>;
+// };
