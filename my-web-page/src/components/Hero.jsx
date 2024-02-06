@@ -20,7 +20,7 @@ export default function Hero() {
   return (
     <div>
       <Header />
-      <div>{languageButton}</div>
+      {/* languagebutton */}
       <div className="languageButton"></div>
 
       <h1>{header}</h1>
