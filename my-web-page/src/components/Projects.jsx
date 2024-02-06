@@ -8,12 +8,13 @@ export default function Projects() {
   return (
     <div>
       <h2>Projects</h2>
-      {projects?.map((project, i) => {
-        <div>
+      {/* use () instead of {} and return the JSX elements explicitly. */}
+      {projects?.map((project, i) => (
+        <div key={i}>
           <h4>{project}</h4>
           <p>{projectTexts && projectTexts[i]}</p>
-        </div>;
-      })}
+        </div>
+      ))}
     </div>
   );
 }

@@ -6,21 +6,24 @@ export default function Skills() {
   const { skills } = data;
 
   return (
-    <div>
+    <div className="skills-container">
       <h2>Skills</h2>
-      <ul>
-        {skills &&
-          Object.keys(skills).map((skillName) => (
-            <li key={skillName}>
-              <img
-                src={skills[skillName]}
-                alt={skillName}
-                style={{ width: "50px", height: "50px", marginRight: "10px" }}
-              />
-              {skillName}
-            </li>
-          ))}
-      </ul>
+      <div className="skills-item">
+        <ul>
+          {/* !!!! */}
+          {skills &&
+            Object.keys(skills).map((skillName) => (
+              <li key={skillName}>
+                <img
+                  src={skills[skillName]}
+                  alt={skillName}
+                  style={{ width: "50px", height: "50px", marginRight: "10px" }}
+                />
+                {skillName}
+              </li>
+            ))}
+        </ul>
+      </div>
     </div>
   );
 }

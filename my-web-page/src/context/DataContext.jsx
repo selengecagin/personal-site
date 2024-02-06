@@ -2,6 +2,8 @@ import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
 import { dataEng } from "../data";
 
+export const DataContext = createContext();
+
 export const DataProvider = ({ children }) => {
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
@@ -12,16 +14,18 @@ export const DataProvider = ({ children }) => {
     axios
       .post("/post", dataEng)
       .then((res) => {
-        setData(dataEng);
+        setData(res.data);
+        setLoading(false);
         console.log("response: ", res);
       })
       .catch((err) => {
         setError(err);
+        setLoading(false);
         console.log("error: ", err);
       });
   }, []);
 
-  console.log("datalar", data);
+  console.log("Datacontext datalar", data);
 
   return (
     <DataContext.Provider value={{ data, setData, loading, error }}>
@@ -29,5 +33,3 @@ export const DataProvider = ({ children }) => {
     </DataContext.Provider>
   );
 };
-
-export const DataContext = createContext();
