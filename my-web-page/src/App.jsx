@@ -5,15 +5,18 @@ import Projects from "./components/Projects";
 import Profile from "./components/Profile";
 import Footer from "./components/Footer";
 import { DataProvider } from "./context/DataContext";
+import { LanguageProvider } from "./context/DataContext";
 function App() {
   return (
-    <DataProvider>
-      <Hero />
-      <Skills />
-      <Projects />
-      <Profile />
-      <Footer />
-    </DataProvider>
+    <LanguageProvider>
+      <DataProvider>
+        <Hero />
+        <Skills />
+        <Profile />
+        <Projects />
+        <Footer />
+      </DataProvider>
+    </LanguageProvider>
   );
 }
 
