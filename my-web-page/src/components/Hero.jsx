@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import Header from "./Header";
 import { DataContext } from "../context/DataContext";
 
+
 export default function Hero() {
   const { data, loading, error } = useContext(DataContext);
   const { header, description, imgURL, buttons } = data;
@@ -10,7 +11,7 @@ export default function Hero() {
 
 
 
-  
+
   return (
     <div>
       <Header />

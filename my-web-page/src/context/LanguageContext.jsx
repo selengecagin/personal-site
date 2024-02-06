@@ -12,9 +12,12 @@ export default function LanguageContextProvider({ children }) {
     setLanguage((lng) => (lng === "en" ? "tr" : "en"));
   };
 
-  return <LanguageContext.Provider>{children}</LanguageContext.Provider>;
+  return (
+    <LanguageContext.Provider value={{ language, setLanguage, toggleLanguage }}>
+      {children}
+    </LanguageContext.Provider>
+  );
 }
-
 
 //Notes:
 // const MyComponent = () => {

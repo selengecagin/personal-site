@@ -5,10 +5,10 @@ import Projects from "./components/Projects";
 import Profile from "./components/Profile";
 import Footer from "./components/Footer";
 import { DataProvider } from "./context/DataContext";
-import { LanguageProvider } from "./context/DataContext";
+import { LanguageContextProvider } from "./context/LanguageContext";
 function App() {
   return (
-    <LanguageProvider>
+    <LanguageContextProvider>
       <DataProvider>
         <Hero />
         <Skills />
@@ -16,7 +16,7 @@ function App() {
         <Projects />
         <Footer />
       </DataProvider>
-    </LanguageProvider>
+    </LanguageContextProvider>
   );
 }
 
