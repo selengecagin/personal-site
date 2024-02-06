@@ -4,7 +4,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Profile from "./components/Profile";
 import Footer from "./components/Footer";
-import { DataProvider } from "./context/DataContext";
+import DataProvider from "./context/DataContext";
 import LanguageContextProvider from "./context/LanguageContext";
 function App() {
   return (
