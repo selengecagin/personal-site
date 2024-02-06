@@ -14,9 +14,12 @@ export default function Profile() {
   //   : [];
 
   return (
-    <div>
-      <div>
+    <div className="profile-container">
+      <h2>Profile</h2>
+      
+      <div className="profile-item">
         <h3>Basic Information</h3>
+
         <div>
           <p>Birthdate</p>
           <p>{profile?.birthDate}</p>
@@ -38,11 +41,11 @@ export default function Profile() {
         </div>
       </div>
 
-      <div>
+      <div className="profile-item">
         <img src="imgURL" />
       </div>
 
-      <div>
+      <div className="profile-item">
         <h3>About Me</h3>
         {aboutMe?.map((value, i) => {
           <p key={i}>{value}</p>;
