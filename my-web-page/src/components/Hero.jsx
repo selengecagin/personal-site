@@ -35,7 +35,7 @@ export default function Hero() {
 
       <div className="hero-btn">
         {buttons?.map((button, index) => {
-          <div>
+          <div className="btn">
             <button key={index}>
               {index % 2 === 0 ? (
                 <FontAwesomeIcon icon={faGithub} size="2x" />
