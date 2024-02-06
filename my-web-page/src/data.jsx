@@ -1,4 +1,4 @@
-export const dataEn = {
+export const data = {
   name: "Selenge",
   header: "I am a Frontend Developer...",
   description:

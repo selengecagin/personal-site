@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { DataContext } from "../context/DataContext";
 export default function Profile() {
   const { data } = useContext(DataContext);
-  const { profile, imgURL, aboutMe } = data;
+  const { profile, profileIMG, aboutMe } = data;
   console.log(data);
   //burayı nasıl mapleyebilirim?
   // {key:"birthDate",title:"Doğum Tarihi"}
@@ -16,11 +16,9 @@ export default function Profile() {
   return (
     <div className="profile-container">
       <h2>Profile</h2>
-      
       <div className="profile-item">
         <h3>Basic Information</h3>
-
-        <div>
+        <div className="profile-item">
           <p>Birthdate</p>
           <p>{profile?.birthDate}</p>
         </div>
@@ -41,8 +39,8 @@ export default function Profile() {
         </div>
       </div>
 
-      <div className="profile-item">
-        <img src="imgURL" />
+      <div>
+        <img src={profile?.profileIMG} />
       </div>
 
       <div className="profile-item">
