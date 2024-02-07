@@ -23,14 +23,14 @@ const languageButton = () => {
 };
 
 export default function Hero() {
-  const { data, loading, error } = useContext(DataContext);
+  const { data, setData, loading, error } = useContext(DataContext);
   const { header, description, heroImg, buttons } = data;
   const { language } = useContext(LanguageContext);
 
   useEffect(() => {
-    const showLng = language === "en" ? engData : trData;
+    const showLng = language === "en" ? dataEng : dataTr;
     setPostData(showLng);
-  }, [language, setPostData]);
+  }, [language, setData]);
 
   return (
     <div>
@@ -44,11 +44,10 @@ export default function Hero() {
           return (
             <div className="btn" key={index}>
               <button>
-                {index % 2 === 0 ? (
-                  <FontAwesomeIcon icon={faGithub} size="2x" />
-                ) : (
-                  <FontAwesomeIcon icon={faLinkedin} size="2x" />
-                )}
+                <FontAwesomeIcon
+                  icon={index % 2 === 0 ? faGithub : faLinkedin}
+                  size="2x"
+                />
                 <p>{button}</p>
               </button>
             </div>
@@ -66,3 +65,16 @@ export default function Hero() {
 //  while adding key={index} may suppress the warning, it's best to ensure that each item in the list has a
 //  stable and unique identifier to improve the performance and correctness of your React components.
 //  Do my solution provide this??
+
+{
+  /* <div className="btn" key={index}>
+  <button>
+    {index % 2 === 0 ? (
+      <FontAwesomeIcon icon={faGithub} size="2x" />
+    ) : (
+      <FontAwesomeIcon icon={faLinkedin} size="2x" />
+    )}
+    <p>{button}</p>
+  </button>
+</div>; */
+}
