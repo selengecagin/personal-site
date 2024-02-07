@@ -23,14 +23,14 @@ const languageButton = () => {
 };
 
 export default function Hero() {
-  // const { data, loading, error } = useContext(DataContext);
-  // const { header, description, heroImg, buttons } = data;
+  const { data, loading, error } = useContext(DataContext);
+  const { header, description, heroImg, buttons } = data;
+  const { language } = useContext(LanguageContext);
 
- const {language} =useContext(LanguageContext);
-
- //her language değişiminde veya setData değişiminde yakala
- useEffect(()=>{},[])
-
+  useEffect(() => {
+    const showLng = language === "en" ? engData : trData;
+    setPostData(showLng);
+  }, [language, setPostData]);
 
   return (
     <div>
