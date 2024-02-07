@@ -91,3 +91,14 @@ h3 {
 .project-area {
   background-color: #ffffff;
 }
+
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  display: flex;
+}
