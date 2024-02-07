@@ -33,28 +33,31 @@ export default function Hero() {
   }, [language, setData]);
 
   return (
-    <div>
+    <div className="hero">
       <Header />
       {languageButton()}
-      <h1>{header}</h1>
-      <p>{description}</p>
+      <div className="hero-container">
+        <div className="hero-content-left">
+          <h1>{header}</h1>
+          <p>{description}</p>
 
-      <div className="hero-btn">
-        {buttons?.map((button, index) => {
-          return (
-            <div className="btn" key={index}>
-              <button>
-                <FontAwesomeIcon
-                  icon={index % 2 === 0 ? faGithub : faLinkedin}
-                  size="2x"
-                />
-                <p>{button}</p>
-              </button>
-            </div>
-          );
-        })}
-
-        <div className="hero-img">
+          <div className="hero-btn">
+            {buttons?.map((button, index) => {
+              return (
+                <div className="btn" key={index}>
+                  <button>
+                    <FontAwesomeIcon
+                      icon={index % 2 === 0 ? faGithub : faLinkedin}
+                      size="2x"
+                    />
+                    <p>{button}</p>
+                  </button>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="hero-img-right">
           <img src={heroImg} alt="Hero Image"></img>
         </div>
       </div>
