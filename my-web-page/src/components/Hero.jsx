@@ -39,7 +39,7 @@ export default function Hero() {
       <div className="hero-container">
         <div className="hero-content-left">
           <h1>{header}</h1>
-          <p>{description}</p>
+          <p className="pTag">{description}</p>
 
           <div className="hero-btn">
             {buttons?.map((button, index) => {

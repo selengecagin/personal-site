@@ -1,11 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200&family=Inter:wght@700&display=swap");
 
+
+/* hero component */
 .hero {
   display: flex;
   background-color: #4731d3;
   flex-direction: column;
 }
 
-.hero-container{
-    
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  margin-top: 15%;
+  justify-content: space-between;
 }
+
+.hero-content-left {
+  display: flex;
+  flex-direction: column;
+  background-color: #4731d3;
+  width: auto;
+  gap: 2vh;
+}
+
+.hero-btn {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: row;
+}
+
+.hero button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 127px;
+  height: 52px;
+  border-radius: 6px;
+  border: 1px solid;
+  padding: 12px, 12px, 20px, 12px;
+  background-color: #ffff;
+  color: #3730a3;
+}
+
+.hero h1 {
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 110%;
+  height: auto;
+  color: #cbf281;
+}
+
+.hero-content-left .pTag {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24;
+  line-height: auto;
+  color: #ffff;
+}
+
+.hero-img-right {
+  display: flex;
+  width: 350px;
+  height: 375.89px;
+  border-radius: 18px;
+}
+
