@@ -18,27 +18,28 @@ export default function Profile() {
       <h2>Profile</h2>
       <div className="profile-item">
         <h3>Basic Information</h3>
-        <div className="profile-item">
-          <p>Birth date</p>
-          <p>{profile?.birthDate}</p>
-        </div>
-
         <div>
-          <p>Current Adress</p>
-          <p>{profile?.location}</p>
-        </div>
+          <div>
+            <p className="greenColor">Birth date</p>
+            <p>{profile?.birthDate}</p>
+          </div>
 
-        <div>
-          <p>Education</p>
-          <p>{profile?.education}</p>
-        </div>
+          <div>
+            <p className="greenColor">Current Adress</p>
+            <p>{profile?.location}</p>
+          </div>
 
-        <div>
-          <p>Preferred Role</p>
-          <p>{profile?.preferredPosition}</p>
+          <div>
+            <p className="greenColor">Education</p>
+            <p>{profile?.education}</p>
+          </div>
+
+          <div>
+            <p className="greenColor">Preferred Role</p>
+            <p>{profile?.preferredPosition}</p>
+          </div>
         </div>
       </div>
-
       <div>
         <img src={profile?.profileIMG} />
       </div>

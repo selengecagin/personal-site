@@ -9,7 +9,7 @@ export default function Projects() {
     <div className="projects-container">
       <h2>Projects</h2>
       {/* use () instead of {} and return the JSX elements explicitly. */}
-      <div className="project-box">
+      <div className="project-area">
         {projects &&
           projects.map((project, index) => (
             <div key={index}>

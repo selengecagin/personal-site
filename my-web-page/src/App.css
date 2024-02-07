@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200&family=Inter:wght@700&display=swap");
 
-
 /* hero component */
 .hero {
   display: flex;
@@ -68,3 +67,27 @@
   border-radius: 18px;
 }
 
+/* profile component */
+.profile-container {
+  background-color: #4731d3;
+  color: #ffffff;
+}
+
+.profile-container h2 {
+  color: #cbf281;
+}
+.greenColor {
+  color: #cbf281;
+}
+
+/* projects component */
+.projects-container {
+  background-color: #cbf281;
+}
+.projects-container h2,
+h3 {
+  color: #4731d3;
+}
+.project-area {
+  background-color: #ffffff;
+}
