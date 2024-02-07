@@ -1,1 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200&family=Inter:wght@700&display=swap");
+
+.hero {
+  display: flex;
+  background-color: #4731d3;
+  flex-direction: column;
+}

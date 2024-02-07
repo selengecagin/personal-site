@@ -24,7 +24,7 @@ const languageButton = () => {
 
 export default function Hero() {
   const { data, setData, loading, error } = useContext(DataContext);
-  const { header, description, heroImg, buttons } = data;
+  const { header, description, heroIMG, buttons } = data;
   const { language } = useContext(LanguageContext);
 
   useEffect(() => {
@@ -58,7 +58,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-img-right">
-          <img src={heroImg} alt="Hero Image"></img>
+          <img src={heroIMG} alt="Hero Image"></img>
         </div>
       </div>
     </div>
