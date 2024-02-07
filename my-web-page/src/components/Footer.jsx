@@ -7,7 +7,7 @@ import {
   faCodepen,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-
+import { faAt } from "@fortawesome/free-solid-svg-icons";
 export default function Footer() {
   const { data } = useContext(DataContext);
   const { footer } = data;
@@ -20,7 +20,7 @@ export default function Footer() {
       <div className="icons">
         <FontAwesomeIcon icon={faTwitter} />
         <FontAwesomeIcon icon={faCodepen} />
-        <FontAwesomeIcon icon="fa-solid fa-at" />
+        <FontAwesomeIcon icon={faAt} />
         <FontAwesomeIcon icon={faInstagram} />
       </div>
     </div>
