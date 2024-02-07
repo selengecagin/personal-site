@@ -8,16 +8,13 @@ import { DataProvider } from "./context/DataContext";
 import LanguageContextProvider from "./context/LanguageContext";
 function App() {
   return (
-    <LanguageContextProvider>
-      <DataProvider>
-        {/* header is imported to the hero component */}
-        <Hero />
-        <Skills />
-        <Profile />
-        <Projects />
-        <Footer />
-      </DataProvider>
-    </LanguageContextProvider>
+    <>
+      <Hero />
+      <Skills />
+      <Profile />
+      <Projects />
+      <Footer />
+    </>
   );
 }
 
