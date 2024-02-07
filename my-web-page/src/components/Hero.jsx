@@ -53,9 +53,11 @@ export default function Hero() {
             </div>
           );
         })}
-      </div>
 
-      <img src={heroImg} alt="Hero Image"></img>
+        <div className="hero-img">
+          <img src={heroImg} alt="Hero Image"></img>
+        </div>
+      </div>
     </div>
   );
 }
