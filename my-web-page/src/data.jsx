@@ -36,6 +36,17 @@ export const dataEng = {
     text: "Got a question or proposal, or just want to say hello? Go ahead.",
     email: "selengecagin@gmail.com",
   },
+  projectItems: ["react", "redux", "vercel"],
+  projectLinks: [
+    {
+      label: "Visit Site",
+      url: "https://github.com/selengecagin",
+    },
+    {
+      label: "Github",
+      url: "https://github.com/selengecagin",
+    },
+  ],
 };
 
 export const dataTr = {
@@ -75,4 +86,15 @@ export const dataTr = {
     text: "hatalıysam ara :)",
     email: "selengecagin@gmail.com",
   },
+  projectItems: ["react", "redux", "vercel"],
+  projectLinks: [
+    {
+      label: "Visit Site",
+      url: "https://github.com/selengecagin",
+    },
+    {
+      label: "Github",
+      url: "https://github.com/selengecagin",
+    },
+  ],
 };

@@ -16,8 +16,8 @@ export default function Projects() {
               <h3>{project}</h3>
               <p>{projectTexts && projectTexts[index]}</p>
               <img src={projectsImg && projectsImg[index]} />
-              <div className="items"> ITEMS</div>
-              <div className="links"> LINKS</div>
+              <div className="projectItems"> ITEMS</div>
+              <div className="projectLinks"> LINKS</div>
             </div>
           ))}
       </div>
