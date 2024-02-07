@@ -29,7 +29,7 @@ export default function Hero() {
 
   useEffect(() => {
     const showLng = language === "en" ? dataEng : dataTr;
-    setPostData(showLng);
+    setData(showLng);
   }, [language, setData]);
 
   return (

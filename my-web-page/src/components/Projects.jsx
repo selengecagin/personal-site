@@ -3,7 +3,7 @@ import { DataContext } from "../context/DataContext";
 
 export default function Projects() {
   const { data, loading, error } = useContext(DataContext);
-  const { projects, projectTexts } = data;
+  const { projects, projectTexts, projectsImg } = data;
 
   return (
     <div className="projects-container">
@@ -14,7 +14,7 @@ export default function Projects() {
           projects.map((project, index) => (
             <div key={index}>
               <h3>{project}</h3>
-              <p>{projectsText && projectsText[index]}</p>
+              <p>{projectTexts && projectTexts[index]}</p>
               <img src={projectsImg && projectsImg[index]} />
               <div className="pill"> PILLS</div>
               <div className="links"> LINKS</div>
