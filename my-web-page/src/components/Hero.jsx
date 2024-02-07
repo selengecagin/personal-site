@@ -1,5 +1,5 @@
 import "../App.css";
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Header from "./Header";
 import { DataContext } from "../context/DataContext";
 import { LanguageContext } from "../context/LanguageContext";
@@ -23,31 +23,40 @@ const languageButton = () => {
 };
 
 export default function Hero() {
-  const { data, loading, error } = useContext(DataContext);
-  const { header, description, heroImg, buttons } = data;
+  // const { data, loading, error } = useContext(DataContext);
+  // const { header, description, heroImg, buttons } = data;
+
+ const {language} =useContext(LanguageContext);
+
+ //her language değişiminde veya setData değişiminde yakala
+ useEffect(()=>{},[])
+
 
   return (
     <div>
       <Header />
-      {/* ********* languagebutton *******/}
+      {languageButton()}
       <h1>{header}</h1>
       <p>{description}</p>
 
       <div className="hero-btn">
         {buttons?.map((button, index) => {
-          <div className="btn">
-            <button key={index}>
-              {index % 2 === 0 ? (
-                <FontAwesomeIcon icon={faGithub} size="2x" />
-              ) : (
-                <FontAwesomeIcon icon={faLinkedin} size="2x" />
-              )}
-            </button>
-          </div>;
+          return (
+            <div className="btn" key={index}>
+              <button>
+                {index % 2 === 0 ? (
+                  <FontAwesomeIcon icon={faGithub} size="2x" />
+                ) : (
+                  <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                )}
+                <p>{button}</p>
+              </button>
+            </div>
+          );
         })}
       </div>
 
-      <img src={heroImg}></img>
+      <img src={heroImg} alt="Hero Image"></img>
     </div>
   );
 }
