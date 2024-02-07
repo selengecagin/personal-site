@@ -17,7 +17,7 @@ const languageButton = () => {
 
   return (
     <button onClick={toggleLanguage}>
-      {language === "en" ? "Türkçe'ye Geç" : " Switch to English"}
+      {language === "en" ? "Turkish" : "English"}
     </button>
   );
 };
