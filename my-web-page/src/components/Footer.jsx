@@ -24,15 +24,21 @@ export default function Footer() {
       <div className="sm:w-1/3">
         <h3 className="text-[48px] font-bold">{footer?.title}</h3>
 
-        <p>{footer?.text}</p>
+        <p
+          className={`text-[30px] px-12 leading-10 pt-5 ${
+            theme === "dark" ? " text-[#FFFFFF]" : "text-[#120B39]"
+          }`}
+        >
+          {footer?.text}
+        </p>
 
-        <p>{footer?.email}</p>
+        <p className="pt-10 text-xl underline">{footer?.email}</p>
 
-        <div className="icons">
-          <FontAwesomeIcon icon={faTwitter} />
-          <FontAwesomeIcon icon={faCodepen} />
-          <FontAwesomeIcon icon={faAt} />
-          <FontAwesomeIcon icon={faInstagram} />
+        <div className="px-5 justify-center space-x-4 mt-4 ">
+          <FontAwesomeIcon icon={faTwitter} className="text-2xl" />
+          <FontAwesomeIcon icon={faCodepen} className="text-2xl" />
+          <FontAwesomeIcon icon={faAt} className="text-2xl" />
+          <FontAwesomeIcon icon={faInstagram} className="text-2xl" />
         </div>
       </div>
     </div>
