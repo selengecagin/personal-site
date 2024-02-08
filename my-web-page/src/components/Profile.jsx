@@ -73,16 +73,16 @@ export default function Profile() {
           </div>
         </div>
 
-        <div className="sm:w-1/3 mt-[50px] ">
-          <img className="sm:w-[450px]" src={heroIMG} alt="Profile" />
+        <div className="sm:w-1/3 ">
+          <img className="w-full h-auto" src={heroIMG} alt="Profile" />
         </div>
-        <div className="sm:w-1/3">
-          <h3 className="sm:text-3xl px-2 sm:text-left  mt-12 sm:mb-12 mb-5 sm:pl-10 text-center  text-[#FFFFFF]">
+        <div className="sm:w-1/3 sm:items-start ">
+          <h3 className="sm:text-3xl px-2 sm:text-left mt-12 sm:mb-12 mb-5 sm:pl-10 text-center text-[#FFFFFF]">
             About Me
           </h3>
           {aboutMe?.map((value, i) => (
             <p
-              className="mb-12 px-5 sm:pl-10  sm:text-start sm:text-xl sm:px-2 text-center  text-[#FFFFFF]"
+              className="mb-12 px-5 sm:pl-10 sm:items-start sm:text-xl sm:px-2 text-[#FFFFFF]"
               key={i}
             >
               {value}

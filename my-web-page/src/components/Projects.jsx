@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <div className="bg-[#CBF281]">
       <div>
-        <div className="ml-[15%] pt-16 pb-8">
+        <div className="ml-[15%] mr-[10%] pt-16 pb-8">
           <h2 className="text-[48px] sm:text-start  text-[#4731D3] font-bold">
             Projects
           </h2>
