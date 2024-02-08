@@ -22,18 +22,15 @@ export default function Footer() {
       }`}
     >
       <div className="sm:w-1/3">
-        <h3 className="text-[48px] font-bold">{footer?.title}</h3>
-
+        <h3 className="text-[48px] font-bold">{contact.title}</h3>
         <p
           className={`text-[30px] px-12 leading-10 pt-5 ${
             theme === "dark" ? " text-[#FFFFFF]" : "text-[#120B39]"
           }`}
         >
-          {footer?.text}
+          {contact.text}
         </p>
-
-        <p className="pt-10 text-xl underline">{footer?.email}</p>
-
+        <p className="pt-10 text-xl underline">{contact.email}</p>
         <div className="px-5 justify-center space-x-4 mt-4 ">
           <FontAwesomeIcon icon={faTwitter} className="text-2xl" />
           <FontAwesomeIcon icon={faCodepen} className="text-2xl" />
