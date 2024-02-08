@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { DataContext } from "../context/DataContext";
-
+import { ThemeContext } from "../context/ThemeContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
@@ -8,7 +8,6 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
-import { ThemeContext } from "../context/ThemeContext";
 
 export default function Footer() {
   const { data } = useContext(DataContext);
