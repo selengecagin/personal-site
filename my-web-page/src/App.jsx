@@ -4,6 +4,10 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Profile from "./components/Profile";
 import Footer from "./components/Footer";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   return (
     <>
@@ -12,6 +16,7 @@ function App() {
       <Profile />
       <Projects />
       <Footer />
+      <ToastContainer />
     </>
   );
 }
