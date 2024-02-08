@@ -23,7 +23,7 @@ const languageButton = () => {
 };
 
 export default function Hero() {
-  const { data, setData, loading, error } = useContext(DataContext);
+  const { data, setData } = useContext(DataContext);
   const { header, description, heroIMG, buttons } = data;
   const { language } = useContext(LanguageContext);
 

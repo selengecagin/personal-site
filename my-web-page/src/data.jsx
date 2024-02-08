@@ -3,7 +3,7 @@ export const dataEng = {
   header: "I am a Frontend Developer...",
   heroIMG: "/images/hero.svg",
   description:
-    "I am a Frontend Developer who likes to craft solid and scalable frontend products with great user experiences",
+    "...who likes to craft solid and scalable frontend products with great user experiences",
   buttons: ["Github", "Linkedin"],
   profile: {
     birthDate: "11.01.1998",
@@ -51,7 +51,7 @@ export const dataEng = {
 
 export const dataTr = {
   name: "Selenge",
-  header: "Ben bir Frontend Geliştiricisiyim",
+  header: "Ben bir Frontend Geliştiricisiyim...",
   heroIMG: "/images/hero.svg",
   description:
     "... mükemmel kullanıcı deneyimlerine sahip, sağlam ve ölçeklenebilir frontend ürünleri oluşturmayı severim",
