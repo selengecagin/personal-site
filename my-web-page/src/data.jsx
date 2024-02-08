@@ -1,15 +1,14 @@
 export const dataEng = {
-  name: "Selenge",
+  name: "almila",
   header: "I am a Frontend Developer...",
   heroIMG: "/images/hero.png",
   description:
     "...who likes to craft solid and scalable frontend products with great user experiences",
   buttons: ["Github", "Linkedin"],
   profile: {
-    birthDate: "11.01.1998",
-    location: "İstanbul",
-    education:
-      "Boğaziçi Üniversitesi, Computer Education and Educational Technologies,2024",
+    birthDate: "24.03.1996",
+    location: "Ankara",
+    education: "Hacettepe Ünv. Biyoloji Lisans, 2016",
     preferredPosition: "Frontend, UI",
   },
   aboutMe: [
@@ -20,9 +19,9 @@ export const dataEng = {
     JavaScript: "/images/js.png",
     React: "/images/react.png",
     Redux: "/images/redux.png",
-    NodeJS: "/images/node.png",
+    NodeJS: "/images/node.svg",
     VSCode: "/images/vscode.png",
-    Figma: "/images/figma.png",
+    Figma: "/images/figma.svg",
   },
 
   projects: ["Workintech", "Journey"],
@@ -50,17 +49,16 @@ export const dataEng = {
 };
 
 export const dataTr = {
-  name: "Selenge",
+  name: "almila",
   header: "Ben bir Frontend Geliştiricisiyim...",
   heroIMG: "/images/hero.png",
   description:
     "... mükemmel kullanıcı deneyimlerine sahip, sağlam ve ölçeklenebilir frontend ürünleri oluşturmayı severim",
   buttons: ["Github", "Linkedin"],
   profile: {
-    birthDate: "11.01.1998",
-    location: "İstanbul",
-    education:
-      "Boğaziçi Üniversitesi, Computer Education and Educational Technologies,2024",
+    birthDate: "24.03.1996",
+    location: "Ankara",
+    education: "Hacettepe Ünv. Biyoloji Lisans, 2016",
     preferredPosition: "Frontend, UI",
   },
   aboutMe: [
@@ -71,9 +69,9 @@ export const dataTr = {
     JavaScript: "/images/js.png",
     React: "/images/react.png",
     Redux: "/images/redux.png",
-    NodeJS: "/images/node.png",
+    NodeJS: "/images/node.svg",
     VSCode: "/images/vscode.png",
-    Figma: "/images/figma.png",
+    Figma: "/images/figma.svg",
   },
   projects: ["Workintech", "Journey"],
   projectTexts: [

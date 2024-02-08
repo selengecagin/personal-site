@@ -29,7 +29,7 @@ export default function Skills() {
                 <img
                   src={skills[skillName]}
                   alt={skillName}
-                  className=" w-[150px] h-auto
+                  className=" w-[120px] h-[120px]
                   "
                 />
                 <div className={`text-xl sm:text-xl sm:max-h-[720px] `}>
