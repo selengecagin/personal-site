@@ -36,14 +36,15 @@ export default function Hero() {
 
   return (
     <div
-      // className={`hero-container flex flex-wrap-reverse sm:no-wrap justify-center m-auto ${
-      //   theme === "dark" ? "bg-[#171043]" : "bg-[#4731D3]"
-      // }`}
+      className={`hero-container flex flex-wrap-reverse sm:no-wrap justify-center m-auto `}
     >
+      {/* ilk div için:  ${
+      theme === "dark" ? "bg-[#171043]" : "bg-[#4731D3]"
+    } */}
       <div className="sm:w-2/3 sm:pl-[15%] sm:pb-20 sm:pt-12 sm:relative ">
         <div className="hero-header flex flex-col justify-center h-auto ">
           <div className="header-right  flex flex-row items-end  content-center justify-around sm:justify-end sm:pl-[55%] sm:pr-[5%]">
-            (languageButton())
+            {languageButton()}
           </div>
           <div className="header-left flex justify-center sm:justify-start">
             <Header />
@@ -63,24 +64,24 @@ export default function Hero() {
                   buttons.map((btn, index) => (
                     <div key={index}>
                       <button
-                        // className={`flex w-[127px] h-[52px] rounded-[6px] border-[1px] border-[solid] pl-[12px] pr-[20px,] py-[12px,] text-[#3730A3] flex-row items-center justify-evenly font-medium text-[18px] leading-[28px] mt-8 ${
-                        //   theme === "dark"
-                        //     ? "bg-[#252128] text-[#FFFFFF]"
-                        //     : "bg-[#FFFFFF] text-[#3730A3]"
-                        // }`}
+                        className={`flex w-[127px] h-[52px] rounded-[6px] border-[1px] border-[solid] pl-[12px] pr-[20px,] py-[12px,] text-[#3730A3] flex-row items-center justify-evenly font-medium text-[18px] leading-[28px] mt-8 `}
                       >
+                        {/* button için:  ${
+                        theme === "dark"
+                          ? "bg-[#252128] text-[#FFFFFF]"
+                          : "bg-[#FFFFFF] text-[#3730A3]"
+                      } */}
                         {index % 2 === 0 ? (
                           <FontAwesomeIcon icon={faGithub} size="2x" />
                         ) : (
                           <FontAwesomeIcon icon={faLinkedin} size="2x" />
                         )}
-                        <p
-                          // className={`text-[1rem] ${
-                          //   theme === "dark"
-                          //     ? "text-[#FFFFFF]"
-                          //     : "text-[#3730A3]"
-                          // }`}
-                        >
+                        <p className={`text-[1rem] `}>
+                          {/*ptagi için:  ${
+                          theme === "dark"
+                            ? "text-[#FFFFFF]"
+                            : "text-[#3730A3]"
+                        } */}
                           {btn}
                         </p>
                       </button>
