@@ -3,7 +3,7 @@ import { DataContext } from "../context/DataContext";
 
 export default function Skills() {
   const { data } = useContext(DataContext);
-  const { skills } = data;
+  const { skills,skillHeader } = data;
 
   return (
     <div
@@ -12,7 +12,7 @@ export default function Skills() {
       {/* div için: ${theme === "dark" ? "bg-[#252128]" : "bg-[#FFFFFF]"} */}
       <h2 className={`font-bold text-[3rem] text-[#3730A3]`}>
         {/* h2 için: ${theme === "dark" ? "text-[#CBF281]" : "text-[#4731D3]"} */}
-        Skills
+        {skillHeader}
       </h2>
       <div className="skill-box-container flex items-start ml-[5%] mr-[20%] ">
         <ul className="flex list-none flex-wrap sm: sm:flex-wrap flex-col sm:flex-row sm:items-start ">

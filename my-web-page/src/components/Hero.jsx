@@ -13,20 +13,10 @@ import { ThemeContext } from "../context/ThemeContext";
 // import { faGithub } from '@fortawesome/free-brands-svg-icons';
 // import { faCopy, faQuestionCircle, faQrcode } from '@fortawesome/free-solid-svg-icons';
 
-const languageButton = () => {
-  const { language, toggleLanguage } = useContext(LanguageContext);
-
-  return (
-    <button onClick={toggleLanguage} className="text-[#CBF281]" >
-      {language === "en" ? "Turkish" : "English"}
-    </button>
-  );
-};
-
 export default function Hero() {
   const { data, setData } = useContext(DataContext);
   const { header, description, heroIMG, buttons } = data;
-  const { language} = useContext(LanguageContext);
+  const { language, toggleLanguage } = useContext(LanguageContext);
   // const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
@@ -44,7 +34,11 @@ export default function Hero() {
       <div className="sm:bg-[#3730A3]  sm:w-2/3 sm:pl-[15%] sm:pb-20 sm:pt-12 sm:relative ">
         <div className="hero-header flex flex-col justify-center h-auto ">
           <div className="header-right  flex flex-row items-end  content-center justify-around sm:justify-end sm:pl-[55%] sm:pr-[5%]">
-            {languageButton()}
+            <div className="lng-btn">
+              <button onClick={toggleLanguage} className="text-[#CBF281]">
+                {language === "en" ? "TÜRKÇE'YE GEÇ" : "SWITCH TO ENGLISH"}
+              </button>
+            </div>
           </div>
           <div className="header-left flex justify-center sm:justify-start">
             <Header />

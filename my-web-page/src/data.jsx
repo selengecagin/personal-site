@@ -5,16 +5,35 @@ export const dataEng = {
   description:
     "...who likes to craft solid and scalable frontend products with great user experiences",
   buttons: ["Github", "Linkedin"],
+
+  profileHeaderH1: "Profile",
+  profileHeaderH2: "Basic Information",
+
   profile: {
     birthDate: "24.03.1996",
     location: "Ankara",
     education: "Hacettepe Ünv. Biyoloji Lisans, 2016",
     preferredPosition: "Frontend, UI",
   },
+  profileData: [
+    { key: "birthDate", title: ["Date of Birth", "24.03.1996"] },
+    { key: "city", title: ["City of Residence", "Ankara"] },
+    {
+      key: "education",
+      title: ["Educational State", "Hacettepe Ünv. Biyoloji Lisans, 2016"],
+    },
+    {
+      key: "preferredRole",
+      title: ["Preferred Role", "Frontend, UI"],
+    },
+  ],
+  aboutMeHeader: "About Me",
   aboutMe: [
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
     "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
   ],
+
+  skillHeader: "Skills",
   skills: {
     JavaScript: "/images/js.png",
     React: "/images/react.png",
@@ -55,16 +74,36 @@ export const dataTr = {
   description:
     "... mükemmel kullanıcı deneyimlerine sahip, sağlam ve ölçeklenebilir frontend ürünleri oluşturmayı severim",
   buttons: ["Github", "Linkedin"],
+
+  profileHeaderH1: "Profil",
+  profileHeaderH2: "Bilgiler",
   profile: {
     birthDate: "24.03.1996",
     location: "Ankara",
     education: "Hacettepe Ünv. Biyoloji Lisans, 2016",
     preferredPosition: "Frontend, UI",
   },
+
+  profileData: [
+    { key: "birthDate", title: ["Doğum Tarihi", "24.03.1996"] },
+    { key: "city", title: ["İkamet Şehri", "Ankara"] },
+    {
+      key: "education",
+      title: ["Eğitim Durumu", "Hacettepe Ünv. Biyoloji Lisans, 2016"],
+    },
+    {
+      key: "preferredRole",
+      title: ["Tercih Ettiği Rol", "Frontend, UI"],
+    },
+  ],
+
+  aboutMeHeader: "Hakkımda",
   aboutMe: [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan, nisi in vehicula varius, eros leo fermentum orci, ac tincidunt ipsum magna eu nulla. Mauris ut molestie nisl, eget pulvinar tellus. Nulla tincidunt ornare massa, non pellentesque libero venenatis pretium. Morbi eu lectus semper, fringilla metus a, sagittis mauris. ",
     "Phasellus tristique lacus neque, laoreet fermentum metus maximus luctus. Donec rutrum tellus vel augue tincidunt fringilla. Donec faucibus lacus in justo vulputate imperdiet. Proin tristique malesuada lectus sed semper. Suspendisse potenti. ",
   ],
+
+  skillHeader: "Yetenekler",
   skills: {
     JavaScript: "/images/js.png",
     React: "/images/react.png",
@@ -81,7 +120,7 @@ export const dataTr = {
   projectsImg: ["/images/project1.png", "/images/project2.png"],
   footer: {
     title: "Bana bir mesaj gönder!",
-    text: "hatalıysam ara :)",
+    text: "Bir sorunuz veya öneriniz mi var, yoksa sadece merhaba mı demek istiyorsunuz? Devam edin.",
     email: "selengecagin@gmail.com",
   },
   projectItems: ["react", "redux", "vercel"],
