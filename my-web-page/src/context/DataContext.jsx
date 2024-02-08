@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
 import { dataEng } from "../data";
+import { toast } from "react-toastify";
 
 export const DataContext = createContext();
 
@@ -12,16 +13,24 @@ export const DataProvider = ({ children }) => {
   //create post request at component did mount
   useEffect(() => {
     axios
-      .post("/post", dataEng)
+      .post("https://reqres.in/api/users", dataEng)
       .then((res) => {
         setData(res.data);
         setLoading(false);
         console.log("response: ", res);
+        toast.success("Data yüklendi.", {
+          position: "top-right",
+          autoClose: 1500,
+        });
       })
       .catch((err) => {
         setError(err);
         setLoading(false);
         console.log("error: ", err);
+        toast.error("Data yüklenemedi,error.", {
+          position: "top-right",
+          autoClose: 1500,
+        });
       });
   }, []);
 
