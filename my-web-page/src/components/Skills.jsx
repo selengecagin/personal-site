@@ -13,7 +13,7 @@ export default function Skills() {
       `}
     >
       {/* div için: ${theme === "dark" ? "bg-[#252128]" : "bg-[#FFFFFF]"} */}
-      <h2 className={`font-bold text-[3rem]  `}>
+      <h2 className={`font-bold text-[3rem] text-[#3730A3] `}>
         {/* h2 için: ${theme === "dark" ? "text-[#CBF281]" : "text-[#4731D3]"} */}
         Skills
       </h2>
@@ -29,12 +29,10 @@ export default function Skills() {
                 <img
                   src={skills[skillName]}
                   alt={skillName}
-                  className=" w-[250px] h-auto
+                  className=" w-[150px] h-auto
                   "
                 />
-                <div
-                  className={`text-xl sm:text-xl sm:max-h-[720px] `}
-                >
+                <div className={`text-xl sm:text-xl sm:max-h-[720px] `}>
                   {/* div için:  ${
                     theme === "dark" ? "text-[#FFFFFF]" : "text-[#777777]"
                   } */}

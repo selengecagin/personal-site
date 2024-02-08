@@ -17,7 +17,7 @@ const languageButton = () => {
   const { language, toggleLanguage } = useContext(LanguageContext);
 
   return (
-    <button onClick={toggleLanguage}>
+    <button onClick={toggleLanguage} className="text-[#CBF281]" >
       {language === "en" ? "Turkish" : "English"}
     </button>
   );
@@ -26,7 +26,7 @@ const languageButton = () => {
 export default function Hero() {
   const { data, setData } = useContext(DataContext);
   const { header, description, heroIMG, buttons } = data;
-  const { language, toggleLanguage } = useContext(LanguageContext);
+  const { language} = useContext(LanguageContext);
   // const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
@@ -41,7 +41,7 @@ export default function Hero() {
       {/* ilk div için:  ${
       theme === "dark" ? "bg-[#171043]" : "bg-[#4731D3]"
     } */}
-      <div className="sm:w-2/3 sm:pl-[15%] sm:pb-20 sm:pt-12 sm:relative ">
+      <div className="sm:bg-[#3730A3]  sm:w-2/3 sm:pl-[15%] sm:pb-20 sm:pt-12 sm:relative ">
         <div className="hero-header flex flex-col justify-center h-auto ">
           <div className="header-right  flex flex-row items-end  content-center justify-around sm:justify-end sm:pl-[55%] sm:pr-[5%]">
             {languageButton()}
@@ -64,7 +64,7 @@ export default function Hero() {
                   buttons.map((btn, index) => (
                     <div key={index}>
                       <button
-                        className={`flex w-[127px] h-[52px] rounded-[6px] border-[1px] border-[solid] pl-[12px] pr-[20px,] py-[12px,] text-[#3730A3] flex-row items-center justify-evenly font-medium text-[18px] leading-[28px] mt-8 `}
+                        className={`sm:bg-[#fcfcfc] flex w-[127px] h-[52px] rounded-[6px] border-[1px] border-[solid] pl-[12px] pr-[20px,] py-[12px,] text-[#3730A3] flex-row items-center justify-evenly font-medium text-[18px] leading-[28px] mt-8 `}
                       >
                         {/* button için:  ${
                         theme === "dark"
@@ -92,7 +92,6 @@ export default function Hero() {
             <img
               className="hero-right max-w-full h-auto sm:absolute top-[100px] -right-[260px]"
               src={heroIMG}
-              alt="woman-working-laptop"
             />
           </div>
         </div>
