@@ -40,7 +40,7 @@ export default function Profile() {
               <p className="font-inter font-semibold text-xl leading-6  text-[#CBF281] mt-8 w-36">
                 {title[0]}
               </p>
-              <p className="font-inter font-normal text-base leading-6 text-[#FFFFFF] mt-8 w-36">
+              <p className="font-inter font-normal text-base leading-6 text-[#FFFFFF] mt-8 w-36 ml-2">
                 {title[1]}
               </p>
             </div>
