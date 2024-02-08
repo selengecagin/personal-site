@@ -12,16 +12,6 @@ export default function Profile() {
     profileData,
   } = data;
 
-  console.log(data);
-  //burayı nasıl mapleyebilirim?
-  // {key:"birthDate",title:"Doğum Tarihi"}
-  // ****** this way, title names couldn't be specified title: "Doğum Tarihi "
-  // const infoTitles = profile ? Object.keys(profile).map((key) => ({
-  //       key,
-  //       title: key.charAt(0).toUpperCase() + key.slice(1),
-  //     }))
-  //   : [];
-
   return (
     <div
       className={`sm:bg-[#3730A3] flex flex-col flex-wrap sm:no-wrap sm:pl-[15%] sm:pr-[10%] sm:py-[5%] sm:pb-20 justify-evenly `}
@@ -81,17 +71,17 @@ export default function Profile() {
   );
 }
 
-{
-  /* {profileData?.map(({ key, title }) => {
-            <div key={key}>
-              {title.map((t, i) => (
-                <p key={i}>{t}</p>
-              ))}
-            </div>;
-          })} */
-}
+// https://forum.freecodecamp.org/t/mapping-an-array-within-a-mapped-array/229335/13
 
-{
+/* {profileData?.map(({ key, title }) => {
+     <div key={key}>
+        {title.map((t, i) => (
+           <p key={i}>{t}</p>
+              ))}
+      </div>;
+  })} 
+*/
+
   /* <div className="flex">
             <p className="font-inter font-semibold text-xl leading-6 text-[#CBF281] mt-8 w-36">
               Birth date
@@ -126,5 +116,6 @@ export default function Profile() {
             <p className="font-inter font-normal text-base leading-6 text-[#FFFFFF] mt-8 w-36">
               {profile?.preferredPosition}
             </p>
-          </div> */
-}
+   </div> 
+  */
+

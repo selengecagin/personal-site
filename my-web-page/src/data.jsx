@@ -126,7 +126,7 @@ export const dataTr = {
   projectItems: ["react", "redux", "vercel"],
   projectLinks: [
     {
-      label: "Visit Site",
+      label: "Ziyaret Et",
       url: "https://github.com/selengecagin",
     },
     {
