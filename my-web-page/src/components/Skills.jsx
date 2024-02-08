@@ -21,7 +21,7 @@ export default function Skills() {
             Object.keys(skills).map((skillName) => (
               <li
                 key={skillName}
-                className="flex items-center justify-center sm:justify-start flex-col sm:flex-row min-w-[425px]"
+                className="flex items-center justify-center sm:justify-start flex-col sm:flex-row min-w-[425px] mb-8"
               >
                 <img
                   src={skills[skillName]}

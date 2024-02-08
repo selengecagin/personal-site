@@ -91,7 +91,17 @@ export default function Hero() {
         </div>
       </div>
       <div className="sm:bg-[#CBF281] sm:w-1/3 sm:pr-[20%] sm:pb-20  mb-[10px] sm:mb-0  sm:pt-6">
-        {/* Theme button */}
+        <div class="flex items-baseline sm:justify-center mt-5">
+          <input type="checkbox" id="toggle" class="hidden" />
+          <label for="toggle" class="flex items-center cursor-pointer">
+            <div class="relative">
+              <div class="toggle-area w-14 h-8 bg-[#8F88FF] rounded-full shadow-inner flex items-center justify-center">
+                <div class="toggle-dot absolute w-5 h-5 bg-[#FFE86E] rounded-full shadow inset-y-0 left-0"></div>
+              </div>
+            </div>
+            <div class="ml-3 text-[#4731D3] bold font-bold">DARK MODE</div>
+          </label>
+        </div>
       </div>
     </div>
   );

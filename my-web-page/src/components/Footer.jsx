@@ -18,7 +18,9 @@ export default function Footer() {
         <h3 className="text-[48px] font-bold text-[#3730A3] text-center">
           {footer?.title}
         </h3>
-        <p className={`text-[30px] px-12 leading-10 pt-5 text-center`}>
+        <p
+          className={`text-[30px] px-12 leading-10 pt-5 text-center font-light`}
+        >
           {footer?.text}
         </p>
         <p className="pt-10 text-xl underline text-[#3730A3] text-center">
