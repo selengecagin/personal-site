@@ -13,7 +13,7 @@ export default function Footer() {
   const { footer } = data;
 
   return (
-    <div className={`flex justify-center py-20`}>
+    <footer className={`flex justify-center py-20`}>
       <div className="sm:w-1/3">
         <h3 className="text-[48px] font-bold text-[#3730A3] text-center">
           {footer?.title}
@@ -33,6 +33,6 @@ export default function Footer() {
           <FontAwesomeIcon icon={faInstagram} className="text-2xl" />
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

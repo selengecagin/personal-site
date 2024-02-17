@@ -19,10 +19,7 @@ export default function Hero() {
   const { language, toggleLanguage } = useContext(LanguageContext);
   // const { theme } = useContext(ThemeContext);
 
-  useEffect(() => {
-    const showLng = language === "en" ? dataEng : dataTr;
-    setData(showLng);
-  }, [language, setData]);
+ 
 
   return (
     <div
@@ -91,7 +88,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="sm:bg-[#CBF281] sm:w-1/3 sm:pr-[20%] sm:pb-20  mb-[10px] sm:mb-0  sm:pt-6">
-        <div className="flex items-baseline sm:justify-center mt-5">
+        {/* <div className="flex items-baseline sm:justify-center mt-5">
           <label class="relative inline-flex items-center me-5 cursor-pointer">
             <input type="checkbox" value="" class="sr-only peer" checked />
             <div
@@ -105,7 +102,7 @@ export default function Hero() {
               Red
             </span>
           </label>
-        </div>
+        </div> */}
       </div>
     </div>
   );

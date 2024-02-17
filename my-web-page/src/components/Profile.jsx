@@ -16,7 +16,7 @@ export default function Profile() {
     <div
       className={`sm:bg-[#3730A3] flex flex-col flex-wrap sm:no-wrap sm:pl-[15%] sm:pr-[10%] sm:py-[5%] sm:pb-20 justify-evenly `}
     >
-      {/* yukarıdaki div için 
+      {/* div için 
         ${theme === "dark"
         ? "bg-[#171043] text-[#FFFFFF]"
         : "bg-[#4731D3] text-[#FFFFFF]"} */}
